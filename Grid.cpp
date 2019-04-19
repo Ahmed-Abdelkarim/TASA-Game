@@ -142,6 +142,11 @@ void Grid::ExecuteAction(ActionType ActType)
 	case PAUSE:	//pause game
 		pGUI->setInterfaceMode(MODE_MENU);
 		break;
+	case EDIT:
+		pGUI->setInterfaceMode(MODE_MENU);
+		pGUI->PrintMessage("Choose the cell to EDIT");
+		//pGUI->GetPointClicked();
+		break;
 
 	///TODO: Add a case for EACH Action type
 	case MOVE_UP:
