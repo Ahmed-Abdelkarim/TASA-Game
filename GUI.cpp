@@ -103,6 +103,10 @@ ActionType GUI::GetUserAction() const
 				pWind->FlushMouseQueue();
 				return START;
 			case ITM_EXIT: return EXIT;
+			case ITM_DATE: 
+			case ITM_ENEMY:
+			case ITM_OBS:
+				return EDIT;
 
 			///TODO: Add cases for the other items of Create-Grid Mode
 
